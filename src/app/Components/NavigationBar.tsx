@@ -5,6 +5,7 @@ import SiderMenu from "./SiderMenu";
 import { Layout, theme } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
+import PublicationForm from "../Containers/PublicationForm";
 
 
 export default function NavigationBar(){
@@ -24,7 +25,9 @@ export default function NavigationBar(){
                     <SiderMenu/>
                 </Sider>
                 <Content style={{ margin: '24px 16px 0' }}>
-                    <div style={{ padding: 24, minHeight: 360, background: colorBgContainer }}>content</div>
+                    <div style={{ padding: 24, minHeight: 360, background: colorBgContainer }}>
+                        <PublicationForm/>
+                    </div>
                 </Content>
             </div>
                
